@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Laboratorio3</title>
+        <script type="text/javascript">
+            function borrar(){
+                document.forms["form"].reset();
+            }
+            
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="Registro" name="form">
+              <h1> REGISTRO </h1>
+            <br>
+               <label> Nombre Completo </label>
+              <input type="text" name="nombre">
+              <br>
+              <br>
+              <label> Usuario </label>
+              <input type="text" name="usuario">
+              <br>
+              <br>
+               <label> Contraseña </label>
+              <input type="password" name="contraseña">
+              <br>
+              <br>
+               <label> Email </label>
+              <input type="text" name="email">
+              <br>
+              <br>
+              <label> Mes Nacimiento </label>
+              <select name="MesN">
+                  <option value="Junio">Junio</option> 
+                  <option value="Julio">Julio</option> 
+                  <option value="Agosto">Agosto</option>
+                  <option value="Septiembre">Septiembre</option>
+                  <option value="Octubre">Octubre</option>
+                  <option value="Noviembre">Noviembre</option>
+                  <option value="Junio">Diciembre</option>
+                  <option value="Junio">Enero</option>
+                  <option value="Junio">Febrero</option>
+                  <option value="Junio">Marzo</option>
+                  <option value="Junio">Junio</option>
+                  <option value="Junio">Mayo</option> 
+              </select>
+              <br>
+              Hombre <input type="radio" value="Macho" name="Sexo"><br>
+              Mujer <input type="radio" value="Hembra" name="Sexo"><br>
+              Soy mayor de edad<input type="checkbox" name="age"><br>
+              <br>
+              <textarea name="adm" rows="5">
+              </textarea>
+              <br>
+            <input type="submit" value="Enviar">
+            <input type="button" value="Borrar" onclick="borrar();"> 
+        </form>
+    </body>
+</html>
